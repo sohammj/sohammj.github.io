@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pharmacy Management System</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+
+  <nav id="sidebar">
+    <img src="../images/1714410378069.jpeg" alt="Profile Photo">
+    <h2>Soham Joshi</h2>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/sohamjoshi05" target="_blank">
+        <img src="../images/linkedin.png" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/sohammj" target="_blank">
+        <img src="../images/github.png" alt="GitHub">
+      </a>
+      <a href="https://public.tableau.com/app/profile/soham.joshi2662/vizzes" target="_blank">
+        <img src="../images/icons8-tableau-software-48.png" alt="Tableau">
+      </a>
+    </div>
+    <a href="../index.html">Home</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#projects">Projects</a>
+    <a href="../index.html#volunteering">Volunteering</a>
+    <a href="../index.html#certifications">Certifications</a>
+  </nav>
+
+  <div class="content">
+    <header class="subpage-header" style="background-image: url('../images/PHAR.jpg');">
+      <h1>Pharmacy Management System</h1>
+      <p>A Python-based graphical interface for streamlined pharmacy operations.</p>
+    </header>
+
+    <section class="subpage-section">
+      <h2>Introduction</h2>
+      <p>
+        The Pharmacy Management System simplifies everyday operations of pharmacies by 
+        automating tasks like inventory management, sales tracking, and report generation. 
+        Built using Python and Tkinter for a user-friendly graphical interface, it ensures 
+        efficient workflows and reduced human errors. The system is designed to assist 
+        pharmacists in maintaining optimal inventory levels and improving customer service quality.
+      </p>
+    </section>
+
+    <section class="subpage-section">
+      <h2>Core Features</h2>
+      <ul>
+        <li>Inventory Management</li>
+        <li>Sales Processing</li>
+        <li>Search Functionality</li>
+        <li>Data Backup</li>
+        <li>Report Generation</li>
+      </ul>
+      <img src="../images/SCR-20241226-cbld.png" alt="Admin Dashboard">
+    </section>
+
+    <section class="subpage-section">
+      <h2>System Workflow</h2>
+      <p>
+        The system provides a streamlined workflow for both administrators and staff, 
+        ensuring efficient operations:
+      </p>
+      <ul>
+        <li><strong>Admin Dashboard:</strong> Access to inventory management, analytics, and top-selling medicines.</li>
+        <li><strong>Staff Dashboard:</strong> Tools for stock checking, sales processing, and inventory reports.</li>
+        <li><strong>Inventory Module:</strong> Update stock levels, view low-stock alerts, manage medicines efficiently.</li>
+        <li><strong>Sales Module:</strong> Process customer transactions with ease and accuracy.</li>
+        <li><strong>Report Module:</strong> Generate and export reports for inventory and sales trends.</li>
+      </ul>
+      <img src="../images/SCR-20241226-cbyo.png" alt="Staff Dashboard">
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <img src="../images/SCR-20241228-bapj-removebg-preview.png" alt="Emoji" class="footer-emoji" />
+        <p>&copy; 2024 Soham Joshi. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <a href="https://github.com/sohammj/Pharmacy-Management-System" target="_blank" class="floating-github-btn" aria-label="Visit my GitHub Profile">
+      <img src="../images/github.png" alt="GitHub Icon">
+    </a>
+  <script>
+    function toggleMenu() {
+      document.getElementById('sidebar').classList.toggle('show');
+      document.body.classList.toggle('menu-open');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forecasting CO₂ Emissions</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <!-- Toggle Button -->
+  <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+
+  <!-- SIDEBAR -->
+  <nav id="sidebar">
+    <img src="../images/1714410378069.jpeg" alt="Profile Photo">
+    <h2>Soham Joshi</h2>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/sohamjoshi05" target="_blank">
+        <img src="../images/linkedin.png" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/sohammj" target="_blank">
+        <img src="../images/github.png" alt="GitHub">
+      </a>
+      <a href="https://public.tableau.com/app/profile/soham.joshi2662/vizzes" target="_blank">
+        <img src="../images/icons8-tableau-software-48.png" alt="Tableau">
+      </a>
+    </div>
+    <a href="../index.html">Home</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#projects">Projects</a>
+    <a href="../index.html#volunteering">Volunteering</a>
+    <a href="../index.html#certifications">Certifications</a>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <div class="content">
+    <!-- Sub-page Header -->
+    <header class="subpage-header" style="background-image: url('../images/SCR-20241227-nykb.jpeg');">
+      <h1>Forecasting CO₂ Emissions</h1>
+      <p>Insights into environmental trends using advanced forecasting techniques.</p>
+    </header>
+
+    <!-- Introduction -->
+    <section class="subpage-section">
+      <h2>Introduction</h2>
+      <p>
+        Climate change poses significant challenges globally, with the agri-food sector being 
+        a major contributor to CO₂ emissions. This project focuses on analyzing and forecasting 
+        emissions and temperature changes using advanced statistical models to provide actionable 
+        insights for policymakers and stakeholders.
+      </p>
+    </section>
+
+    <!-- Methodology -->
+    <section class="subpage-section">
+      <h2>Methodology</h2>
+      <p>
+        The project utilized Winter's Method (Triple Exponential Smoothing) in both its additive 
+        and multiplicative forms to forecast CO₂ emissions and temperature trends. The dataset 
+        was sourced from Kaggle, combining FAO and IPCC data, and underwent extensive preprocessing 
+        to ensure accuracy.
+      </p>
+      <ul>
+        <li>Data cleaning and preprocessing</li>
+        <li>Application of additive and multiplicative models for different datasets</li>
+        <li>Validation using metrics like MAE and MSE</li>
+      </ul>
+    </section>
+
+    <!-- Findings -->
+    <section class="subpage-section">
+      <h2>Findings</h2>
+      <p>
+        The analysis revealed a concerning upward trend in CO₂ emissions and global temperatures. 
+        Key metrics include:
+      </p>
+      <ul>
+        <li>Mean Absolute Error (MAE) for emissions: 16.57 kt</li>
+        <li>Mean Squared Error (MSE) for emissions: 816.90 kt²</li>
+      </ul>
+      <img src="../images/Figure 2024-12-26 005357.png" alt="CO₂ Emissions Forecast Graph">
+      <img src="../images/Figure 2024-12-26 005336.png" alt="Visualization of Forecasting Methods">
+    </section>
+
+    <!-- Interactive Dashboard -->
+    <section class="subpage-section">
+      <h2>Interactive Dashboard Insights</h2>
+      <p>
+        An interactive Tableau dashboard was developed to visualize CO₂ emissions and temperature trends. 
+        The dashboard enables users to explore data interactively and assess the impacts of current 
+        practices.
+      </p>
+      <img src="../images/Dashboard 1 (10).png" alt="Dashboard Preview">
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <img src="../images/SCR-20241228-bapj-removebg-preview.png" alt="Emoji" class="footer-emoji" />
+        <p>&copy; 2024 Soham Joshi. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <a href="https://github.com/sohammj/Agro-Food-Sector-Emissions-" target="_blank" class="floating-github-btn" aria-label="Visit my GitHub Profile">
+      <img src="../images/github.png" alt="GitHub Icon">
+    </a>
+
+  <!-- Script -->
+  <script>
+    function toggleMenu() {
+      document.getElementById('sidebar').classList.toggle('show');
+      document.body.classList.toggle('menu-open');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Management System</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+
+  <nav id="sidebar">
+    <img src="../images/1714410378069.jpeg" alt="Profile Photo">
+    <h2>Soham Joshi</h2>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/sohamjoshi05" target="_blank">
+        <img src="../images/linkedin.png" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/sohammj" target="_blank">
+        <img src="../images/github.png" alt="GitHub">
+      </a>
+      <a href="https://public.tableau.com/app/profile/soham.joshi2662/vizzes" target="_blank">
+        <img src="../images/icons8-tableau-software-48.png" alt="Tableau">
+      </a>
+    </div>
+    <a href="../index.html">Home</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#projects">Projects</a>
+    <a href="../index.html#volunteering">Volunteering</a>
+    <a href="../index.html#certifications">Certifications</a>
+  </nav>
+
+  <div class="content">
+    <header class="subpage-header" style="background-image: url('../images/pexels-olly-3768095.jpg');">
+      <h1>Hotel Management System</h1>
+      <p>A C++-based solution for efficient and secure hotel administration.</p>
+    </header>
+
+    <section class="subpage-section">
+      <h2>Introduction</h2>
+      <p>
+        The Hotel Management System is a robust application designed to streamline hotel operations, 
+        including reservation management, guest check-ins/check-outs, and billing. Built using 
+        Object-Oriented Programming (OOP) principles in C++, this project ensures enhanced data 
+        security and efficiency. The system centralizes critical data and processes, providing 
+        hotel managers with an intuitive platform.
+      </p>
+    </section>
+
+    <section class="subpage-section">
+      <h2>Core Features</h2>
+      <ul>
+        <li><strong>Reservation Management:</strong> Real-time room bookings, updates.</li>
+        <li><strong>Check-In/Check-Out Process:</strong> Intuitive interface for guest handling.</li>
+        <li><strong>Restaurant Module:</strong> Seamless food ordering & billing integrated with guest records.</li>
+        <li><strong>Data Security:</strong> Data hiding & encapsulation for sensitive info.</li>
+        <li><strong>Report Generation:</strong> Operational reports for better decision-making.</li>
+      </ul>
+    </section>
+
+    <section class="subpage-section">
+      <h2>System Workflow</h2>
+      <ul>
+        <li><strong>Manager Login:</strong> Secure access to system functionalities.</li>
+        <li><strong>Reception Module:</strong> Guest data, room allocation, payments.</li>
+        <li><strong>Restaurant Module:</strong> Handle food orders & integrate billing.</li>
+        <li><strong>Database Management:</strong> Central storage for guest/room data.</li>
+        <li><strong>Analytics & Reporting:</strong> Insights into occupancy & financial performance.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <img src="../images/SCR-20241228-bapj-removebg-preview.png" alt="Emoji" class="footer-emoji" />
+        <p>&copy; 2024 Soham Joshi. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('sidebar').classList.toggle('show');
+      document.body.classList.toggle('menu-open');
+    }
+  </script>
+</body>
+</html>

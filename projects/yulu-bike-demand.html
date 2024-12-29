@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Predicting Yulu Bike Demand</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+
+  <nav id="sidebar">
+    <img src="../images/1714410378069.jpeg" alt="Profile Photo">
+    <h2>Soham Joshi</h2>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/sohamjoshi05" target="_blank">
+        <img src="../images/linkedin.png" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/sohammj" target="_blank">
+        <img src="../images/github.png" alt="GitHub">
+      </a>
+      <a href="https://public.tableau.com/app/profile/soham.joshi2662/vizzes" target="_blank">
+        <img src="../images/icons8-tableau-software-48.png" alt="Tableau">
+      </a>
+    </div>
+    <a href="../index.html">Home</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#projects">Projects</a>
+    <a href="../index.html#volunteering">Volunteering</a>
+    <a href="../index.html#certifications">Certifications</a>
+  </nav>
+
+  <div class="content">
+    <header class="subpage-header" style="background-image: url('../images/DALL·E 2024-12-27 15.55.56 - A data analysis dashboard displaying variables like weather, season, temperature, humidity, and holidays. The image includes statistical charts and gr.webp');">
+      <h1>Predicting Yulu Bike Demand</h1>
+      <p>Understanding the impact of weather and season on bike-sharing demand using ANOVA.</p>
+    </header>
+
+    <section class="subpage-section">
+      <h2>Introduction</h2>
+      <p>
+        This project aims to uncover the factors influencing the demand for Yulu bike rentals 
+        in India. By analyzing variables such as weather, season, temperature, humidity, and 
+        holidays using statistical methods like ANOVA, we identified the significant drivers 
+        of demand. These insights help optimize operations and enhance market strategies 
+        for bike-sharing systems.
+      </p>
+    </section>
+
+    <section class="subpage-section">
+      <h2>Key Variables & Methods</h2>
+      <ul>
+        <li><strong>Weather & Season:</strong> Analyzed their effects on ride counts using ANOVA.</li>
+        <li><strong>Temperature, Humidity, Wind Speed:</strong> Converted continuous vars into categories.</li>
+        <li><strong>Holiday & Working Days:</strong> Used t-tests to evaluate demand differences.</li>
+      </ul>
+      <img src="../images/SCR-20241226-cfqj.png" alt="Weather ANOVA Results">
+      <img src="../images/SCR-20241226-cfsm.png" alt="Season ANOVA Results">
+    </section>
+
+    <section class="subpage-section">
+      <h2>Analysis Workflow</h2>
+      <ul>
+        <li>Data Preprocessing</li>
+        <li>ANOVA for categorical variables like weather & season</li>
+        <li>t-tests for holidays vs. working days</li>
+        <li>Post-hoc tests for specific category differences</li>
+      </ul>
+    </section>
+
+    <section class="subpage-section">
+      <h2>Conclusion</h2>
+      <p>
+        The analysis revealed that weather and season significantly influence Yulu bike demand, 
+        offering actionable recommendations for operational adjustments and marketing strategies 
+        to enhance market success.
+      </p>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <img src="../images/SCR-20241228-bapj-removebg-preview.png" alt="Emoji" class="footer-emoji" />
+        <p>&copy; 2024 Soham Joshi. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <a href="https://github.com/sohammj/ANOVA-Analysis-on-Bike-Sharing-Data-Season-and-Weather-Impact" target="_blank" class="floating-github-btn" aria-label="Visit my GitHub Profile">
+      <img src="../images/github.png" alt="GitHub Icon">
+    </a>
+    
+  <script>
+    function toggleMenu() {
+      document.getElementById('sidebar').classList.toggle('show');
+      document.body.classList.toggle('menu-open');
+    }
+  </script>
+</body>
+</html>
