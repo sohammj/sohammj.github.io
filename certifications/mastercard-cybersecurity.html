@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
 
   <nav id="sidebar">
@@ -82,7 +83,9 @@
         <p>&copy; 2024 Soham Joshi. All Rights Reserved.</p>
       </div>
     </footer>
-
+    <a href="#" class="back-to-top-btn" id="back-to-top" aria-label="Back to Top">
+      <img src="../images/top.png" alt="Back to Top Icon">
+    </a>
   <script>
     function toggleMenu() {
       document.getElementById('sidebar').classList.toggle('show');
