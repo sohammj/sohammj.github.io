@@ -536,4 +536,13 @@ footer {
     max-height: 180px;
   }
 }
+@supports (-webkit-overflow-scrolling: touch) {
+  #home {
+    background-image: url('images/backgroungnew.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Retain fixed behavior */
+    -webkit-transform: translate3d(0, 0, 0); /* Trigger hardware acceleration */
+  }
+}
 
